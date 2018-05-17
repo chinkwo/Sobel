@@ -1,0 +1,27 @@
+#--------------------------- VGA interface define -------------------------------------------
+NET sclk LOC = P24 | TNM_NET = sys_clk_pin;
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 50000 kHz;
+
+#############rst_n define#####################
+NET rst_n              LOC = P94 | IOSTANDARD = "LVCMOS33";
+#######VGA 332 Pin define#####################
+NET r<0>               LOC = P83 | IOSTANDARD = "LVCMOS33";        ## VGA R0
+NET r<1>               LOC = P84 | IOSTANDARD = "LVCMOS33";        ## VGA R1
+NET r<2>               LOC = P85 | IOSTANDARD = "LVCMOS33";        ## VGA R2
+NET g<0>               LOC = P80 | IOSTANDARD = "LVCMOS33";         ## VGA G0
+NET g<1>               LOC = P81 | IOSTANDARD = "LVCMOS33";         ## VGA G1
+NET g<2>               LOC = P82 | IOSTANDARD = "LVCMOS33";         ## VGA G2
+NET b<0>               LOC = P79 | IOSTANDARD = "LVCMOS33";         ## VGA B0
+NET b<1>               LOC = P78 | IOSTANDARD = "LVCMOS33";         ## VGA B1
+
+NET v_sync                 LOC = P75 | IOSTANDARD = "LVCMOS33";        ## VGA VS
+NET h_sync                 LOC = P74 | IOSTANDARD = "LVCMOS33";        ## VGA HS         
+
+
+NET rx                 		 LOC = P56 | IOSTANDARD = "LVCMOS33";
+
+
+
+
+
+
